@@ -1,5 +1,9 @@
 const User = require('../models/user');
 
+// Función para renderizar el home
+function getHome(req, res) {
+  res.render('home');
+}
 
 // Función para renderizar la vista principal
 function getIndex(req, res) {
@@ -50,5 +54,6 @@ module.exports = {
   getUser,
   getIndex,
   getRegister,
-  getLogin
+  getLogin,
+  getHome
 };

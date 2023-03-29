@@ -1,18 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Blog recursa</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-  </head>
+    <title>Blog al estilo Twitter</title>
+    <style>
+      /* Estilos globales  */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        /* / Encabezado / */
+        .sticky-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #1da1f2;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            
+        }
+        h1 {
+            margin: 0;
+        }
+        /* / Contenedor de publicaciones / */
+        .container {
+            padding-top: 50px;
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+            max-width: 600px;
+        }
 
+        .rg {
+          position: absolute;
+          
+        }
+        /* / Publicación / */
+        .post {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        .post img {
+            max-width: 100%;
+        }
+        .post h2 {
+            margin: 0;
+        }
+        .post p {
+            margin-top: 10px;
+        }
+        /* Pie de página  */
+      footer {
+        background-color: #1da1f2;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
   <body>
-    <h1>Titulo</h1>
+    <header class="sticky-header">
+      <h1>Blog al estilo Twitter</h1>
+      <div class="rg"><a href="/auth/register">Registrarse</a></div>
+    </header>
+
+    <div class="container">
+      <div class="post">
+        <h2>Título de la publicación</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+          euismod sapien sed risus pretium, ac consequat augue fermentum.
+          Aliquam in nulla vestibulum, pharetra enim a, laoreet velit. Duis
+          commodo elit libero, et pharetra quam semper sed. In eu commodo metus,
+          vel tempor quam. Nullam molestie leo eget aliquam suscipit. Nam eu
+          nulla sed nisl sagittis hendrerit in non magna. Pellentesque habitant
+          morbi tristique senectus et netus et malesuada fames ac turpis
+          egestas.
+        </p>
+        <img
+          src="https://via.placeholder.com/500x300.png"
+          alt="Imagen de la publicación"
+        />
+      </div>
+      <div class="post">
+        <h2>Título de la publicación</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+          euismod sapien sed risus pretium, ac consequat augue fermentum.
+          Aliquam in nulla vestibulum, pharetra enim a, laoreet velit. Duis
+          commodo elit libero, et pharetra quam semper sed. In eu commodo metus,
+          vel tempor quam. Nullam molestie leo eget aliquam suscipit. Nam eu
+          nulla sed nisl sagittis hendrerit in non magna. Pellentesque habitant
+          morbi tristique senectus et netus et malesuada fames ac turpis
+          egestas.
+        </p>
+      </div>
+      <div class="post">
+        <h2>Título de la publicación</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+          euismod sapien sed risus pretium, ac Imagen consequat augue fermentum.
+          Aliquam in nulla vestibulum, pharetra enim a, laoreet velit. Duis
+          commodo elit libero, et pharetra quam semper sed. In eu commodo metus,
+          vel tempor quam. Nullam molestie leo eget aliquam suscipit. Nam eu
+          nulla sed nisl sagittis hendrerit in non magna. Pellentesque habitant
+          morbi tristique senectus et netus et malesuada fames ac turpis
+          egestas.
+        </p>
+        <img
+          src="https://via.placeholder.com/500x300.png"
+          alt="Imagen de la publicación"
+        />
+      </div>
+    </div>
+    <footer>
+      <p>© 2023 Blog al estilo Twitter</p>
+    </footer>
   </body>
 </html>
